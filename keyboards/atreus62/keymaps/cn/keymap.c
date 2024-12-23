@@ -22,15 +22,24 @@
 #define NAV MO(_NAV)
 
 // Mod taps left
-#define MT_A MT(MOD_LGUI, KC_A)
-#define MT_S MT(MOD_LALT, KC_S)
-#define MT_D MT(MOD_LSFT, KC_D)
-#define MT_F MT(MOD_LCTL, KC_F)
+// #define MT_A MT(MOD_LGUI, KC_A)
+// #define MT_S MT(MOD_LALT, KC_S)
+// #define MT_D MT(MOD_LSFT, KC_D)
+// #define MT_F MT(MOD_LCTL, KC_F)
+#define MT_A KC_A
+#define MT_S KC_S
+#define MT_D KC_D
+#define MT_F KC_F
+
 // Mod taps right
-#define MT_J MT(MOD_RCTL, KC_J)
-#define MT_K MT(MOD_RSFT, KC_K)
-#define MT_L MT(MOD_LALT, KC_L)
-#define MT_SCLN MT(MOD_RGUI, KC_SCLN)
+// #define MT_J MT(MOD_RCTL, KC_J)
+// #define MT_K MT(MOD_RSFT, KC_K)
+// #define MT_L MT(MOD_LALT, KC_L)
+// #define MT_SCLN MT(MOD_RGUI, KC_SCLN)
+#define MT_J KC_J
+#define MT_K KC_K
+#define MT_L KC_L
+#define MT_SCLN KC_SCLN
 
 // Thumb keys
 
@@ -46,8 +55,8 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_DEFAULT] = LAYOUT( /* qwerty */
     KC_GRV,   KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                        KC_6,   KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS ,
-    KC_BSLS,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                        KC_Y,   KC_U,    KC_I,    KC_O,    MT_SCLN,    KC_RBRC ,
-    KC_TAB,   MT_A,    MT_S,    MT_D,    MT_F,    KC_G,                        KC_H,   MT_J,    MT_K,    MT_L,    KC_P, KC_QUOT ,
+    KC_BSLS,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                        KC_Y,   KC_U,    KC_I,    KC_O,    MT_SCLN, KC_RBRC ,
+    KC_TAB,   MT_A,    MT_S,    MT_D,    MT_F,    KC_G,                        KC_H,   MT_J,    MT_K,    MT_L,    KC_P,    KC_QUOT ,
     KC_LSFT,  KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                        KC_N,   KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_LBRC ,
     KC_LCTL,  KC_LGUI, KC_LALT, KC_EQL,  MT_L1,   MT_L2,   MT_L3,     MT_R1,   MT_R2,  MT_R3,   KC_MINS, KC_RALT, KC_RGUI, KC_RCTL
   ),
@@ -97,7 +106,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                     KC_TRNS, KC_PLUS, KC_TRNS, KC_LBRC, KC_RBRC, KC_TRNS ,
     KC_TRNS,  KC_TILDE,KC_SLSH, KC_BSLS, KC_PIPE, KC_GRV,                      KC_EQL,  KC_MINS, KC_UNDS, KC_LCBR, KC_RCBR, KC_TRNS ,
     KC_TRNS,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                     KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_TRNS ,
-    KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, LOWER,      RAISE,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+    KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, LOWER,      RAISE,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, QK_BOOT
   ),
 
   /*
